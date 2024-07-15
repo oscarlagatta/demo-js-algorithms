@@ -20,7 +20,7 @@ Objects are reference types,
 
 
 
-Context vs scope
+**Context vs scope**
 
 Scope is created when it sees curly brackets
 
@@ -351,9 +351,7 @@ function mergeSortedArrays(array1, array2) {
             j++;
         }
     }
-    
     return mergedArray;
-
 }
 
 

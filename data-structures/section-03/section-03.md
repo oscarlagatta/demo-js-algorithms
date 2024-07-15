@@ -34,5 +34,13 @@ Dynamic arrays expand as we add elements.
 
 ```javascript
 
+// static
+const arr1 = new Array(10);
+arr1[0] = 'dynamic';
+
+// dynamic
+const arr2 = [];
+arr2.push('dynamic');
+
 
 ```
