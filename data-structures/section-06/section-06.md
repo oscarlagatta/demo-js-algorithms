@@ -250,7 +250,114 @@ newArray.push('nice');
 
 newArray.delete(1);
 console.log(newArray); // you are nice !
+```
 
+// Any string question should be treated as an array question
+// If asked to revert a string, we use array functions. 
+// String turn into an array using the split() function.
+
+
+Interview questions
+
+Create a function that reverts a string
+```javascript
+
+// Not the cleanest way
+function reverse(str) {
+    // check input
+    if (!str || str.length < 2 || typeof str !== 'string') return 'hmm that is not good';
+    
+    const backwards = [];
+    
+    const totalItems = str.length - 1; 
+    
+    for(let i= totalItems; i >= 0; i--) {
+        // we don't need split because the str[i] will do it
+        backwards.push(str[i]);
+    }
+
+    console.log(backwards);
+    
+    return backwards.join('');
+}
+
+reverse('Hi My Name is Oscar');
+
+// In JavaScript we can use with array functions to solve 
+function reverse2(str) {
+    // check input
+    if (!str || str.length < 2 || typeof str !== 'string') return 'hmm that is not good';
+
+    reverse.split('').reverse().join('');
+}
+
+// Is there a more modern way followoing the ES6 syntax
+
+const reverse3 = str => reverse.split('').reverse().join('');
+const reverse4 = str => [...str].reverse().join('');
+
+```
+
+// given 2 arrays sorted can you merge 2 into 1 single array
+```javascript
+
+
+function mergeSortedArrays(array1, array2) {
+    
+    const mergedArray = [];
+    
+    let array1Item = array1[0]; // first item in the array
+    let array2Item = array2[0]; // fisrt item in the second array
+    
+    let i = 1;
+    let j = 1;
+    
+    // check input
+    if(array1.length === 0) {
+        return array2;
+    }
+    
+    if (array2.length === 0) {
+        return array1;
+    }
+    
+    // PROBLEM WITH THIS IMPLEMENTATION BELOW 
+    
+    // while(array1Item || array2Item) {
+    //     console.log(array1Item, array2Item);
+    //     if (array1Item < array2Item) {
+    //         mergedArray.push(array1Item);
+    //         array1Item = array1[i];
+    //         i++;
+    //     }
+    //    
+    //     if (array2Item < array1Item) {
+    //         mergedArray.push(array2Item);
+    //         array2Item = array1[j];
+    //         j++;
+    //     }
+    // }
+
+    // SOLUTION 
+    while(array1Item || array2Item) {
+        console.log(array1Item, array2Item);
+        if (!array2Item || array1Item < array2Item) {
+            mergedArray.push(array1Item);
+            array1Item = array1[i];
+            i++;
+        } else {
+            mergedArray.push(array2Item);
+            array2Item = array1[j];
+            j++;
+        }
+    }
+    
+    return mergedArray;
+
+}
+
+
+mergeSortedArrays([0,3,4,31],[4,6,30]);
 
 ```
 
