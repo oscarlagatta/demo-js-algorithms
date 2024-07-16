@@ -29,3 +29,5 @@ const getMaxWaterContainer = function(heights) {
 
 console.log(getMaxWaterContainer(heightsArray));
 
+
+

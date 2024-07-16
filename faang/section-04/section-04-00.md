@@ -107,14 +107,17 @@ const getMaxWaterContainer = function (heights) {
 
 ## Can we optimize our solution?
 
-New Technique Two Shifting Pointers
+### New Technique Two Shifting Pointers
 
-area = min(a,b) x (bi-a2)
+`area = min(a,b) x (bi-a2)`
 
 The width has a direct impact in the value of the area, as for the nature of the multiplication.
 
 
 ```javascript
+
+const elevationArray = [0,1,0,2,1,0,3,1,0,1,2];
+
 const getMaxWaterContainer = function (heights) {
   let p1 = 0, p2 = heights.length - 1, maxArea = 0;
   console.log({p1, p2, maxArea});
