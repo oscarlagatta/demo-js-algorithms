@@ -27,8 +27,10 @@ function firstRecurringCharacter2(input) {
             map[input[i]] = i;
         }
     }
-
 }
 
 
 firstRecurringCharacter([2,5,1,2,3,5,1,2,4]);
+
+firstRecurringCharacter2([2,5,1,2,3,5,1,2,4]);
+
