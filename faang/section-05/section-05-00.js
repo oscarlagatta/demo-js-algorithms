@@ -18,10 +18,9 @@ const buildString = function (string) {
         } else {
             builtArray.pop();
         }
-    }
+    } // O(n)
     return builtArray;
 }
-
 
 const backSpaceCompare = function (s, t) {
 
