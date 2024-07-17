@@ -49,7 +49,7 @@ const lengthOfLongestSubstring = function (s) {
 
     if (s.length <= 1) return s.length;
 
-    const seenChars = {};
+    const seen = new Map();
 
     let left = 0;
     let longest = 0;
@@ -57,13 +57,13 @@ const lengthOfLongestSubstring = function (s) {
     for (let right = 0; right < s.length; right++) {
         const currentChar = s[right];
 
-        const prevSeenChar = seenChars[currentChar];
+        const prevSeenChar = seen.get(currentChar);
 
         if (prevSeenChar >= left) {
             left = prevSeenChar + 1;
         }
 
-        seenChars[currentChar] = right;
+        seen.set(currentChar, right);
 
         longest = Math.max(longest, right - left + 1);
     }
