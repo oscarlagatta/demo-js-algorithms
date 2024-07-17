@@ -101,12 +101,26 @@ class LinkedList {
 
         let currentNode = this.head;
 
-        while(counter !== index) {
+        while (counter !== index) {
             currentNode = currentNode.next;
             currentNode++;
         }
 
         return currentNode;
+    }
+
+    remove(index) {
+        // check parameters
+
+        const leader = this.traverseToIndex(index - 1);
+
+        const unwantedNode = leader.next;
+
+        leader.next = unwantedNode.next;
+
+        // decrease length as we removed the node
+        this.length--;
+        return this.printList();
     }
 }
 
@@ -116,6 +130,6 @@ myLinkedList.append(16);
 myLinkedList.prepend(1);
 // 1 --> 10 --> 5 --> 16
 myLinkedList.printList();
-// myLinkedList.insert(2, 99);
+myLinkedList.insert(2, 99);
 // 1 --> 10 --> 99 --> 5 --> 16
-console.log(myLinkedList);
+
