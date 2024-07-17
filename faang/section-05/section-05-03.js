@@ -1,4 +1,3 @@
-
 // Given a string find the length of the longest substring without repeating characters
 
 // 'abccabb' => abc , cab
@@ -48,7 +47,7 @@
 
 const lengthOfLongestSubstring = function (s) {
 
-    if(s.length<= 1) return s.length;
+    if (s.length <= 1) return s.length;
 
     const seenChars = {};
 
@@ -66,7 +65,7 @@ const lengthOfLongestSubstring = function (s) {
 
         seenChars[currentChar] = right;
 
-        longest = Math.max(longest, right-left+1);
+        longest = Math.max(longest, right - left + 1);
     }
 
     return longest;
