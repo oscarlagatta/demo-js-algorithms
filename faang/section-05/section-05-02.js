@@ -10,8 +10,6 @@
 // '' => 0
 // 'abcbda' => 4
 
-
-
 const lengthOfLongestSubstring = function (s) {
 
     if (s.length <= 1) return s.length;
@@ -37,3 +35,12 @@ const lengthOfLongestSubstring = function (s) {
 
     return longest;
 }
+
+/*
+* Space and time complexity
+*
+* two for loops that will scale with the string, we have Time: o(n^2)
+*
+* For space complexity, given we use a hashmap, we store the string in the seenChars object, and as it grows the string
+* for this will be every time it resets the object, and it's not cumulative, for Space: O(n).
+* */
