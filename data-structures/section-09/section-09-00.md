@@ -6,7 +6,7 @@ These are very similar because can be implemented in similar way, and the diff i
 We use stack data structures to push, pick, pop; Why would we use this if it's limiting.
 Unlike arrays and linked list with stacks and queues we have less operations.
 
-Stacks
+### Stacks
 
 we can think of them as plates, with a LIFO, Last In, First Out.
 We can only touch the top plate, cannot access the bottom. 
@@ -28,7 +28,7 @@ push O(1) // Add an Item
 peek O(1) // See the top item
 
 
-Queues
+## Queues
 
 Like an entrance to a roller coaster, the first in line goes first, then the second and the third etc.
 
