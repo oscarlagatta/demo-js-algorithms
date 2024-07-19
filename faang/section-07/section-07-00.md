@@ -23,8 +23,8 @@ A palindrome is a string that reads the same forward and backwards.
 * Eva, can I see bees in a cave?
 
 
-if length of the string is odd we have pointers from the outer, 
-and if even from the center we have the pointers.
+if length of the string is odd size we have pointers from the outer converging into one single middle element, 
+and if even size the pointers that converge at the center in two elements.
 
 
 aaabaaa
@@ -37,17 +37,20 @@ having an even we initialize we use the pointers at the center bb
 Depending on the context of the palindrome questions they might be three different solutions
 
 
-Challenge: Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring case sensitivity.
+Challenge 1: 
 
-Step 1: verify the constraints (none for this case)
+`Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring case sensitivity.
+`
+
+Step 1: verify the constraints (as it's clear we don't need to do this)
 Step 2: test cases
 
-    'aabaa' => true
-    'aabbaa' => true
-    'abc' => false, failed case
-    'a' => true, single character
-    '' => true, empty character
-    'A man, a plan, a canal: Panama' => true
+    1. 'aabaa' => returns true
+    2. 'aabbaa' => returns true
+    3. 'abc' => returns false, failed case
+    4. 'a' => returns true, single character
+    5. '' => returns true, empty character
+    6. 'A man, a plan, a canal: Panama' => returns true
 
 Solution should return true or false.
 
