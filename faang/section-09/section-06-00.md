@@ -38,6 +38,8 @@ So the positions we are looking for ar
 
 ### Detailed Explanation:
 
+#### `1 => 2 => 3 => 4 => 5 => 6 => 7 => null   // m = 3 & n = 5`
+
 ```javascript
 const reverseBetween = function (head, m, n) {
 ```
