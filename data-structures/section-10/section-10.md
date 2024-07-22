@@ -105,3 +105,4 @@ In the array representation, this min-heap is stored as [10, 15, 30, 40, 50, 100
 Why use them? They are great for comparative operations and are used in data storage and priority queues.
 
 ### Priority Queues
+
