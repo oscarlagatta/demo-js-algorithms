@@ -15,7 +15,7 @@ next is a pointer to another node or null.
 
 We always return the Head, but we may have a cycle, where we may don't know where it begins
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 ### Question 1:
 

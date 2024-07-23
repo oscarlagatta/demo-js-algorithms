@@ -6,7 +6,7 @@ LINKED LIST
 
 ### `m = 2` and `n = 4`
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 1. Will m and n always be within the bound of the linked list ?
     1. Yes assume 1 <= m <= n <= length of linked list.
