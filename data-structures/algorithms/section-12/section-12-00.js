@@ -100,10 +100,6 @@ console.log(fibonacciRecursive(6))
 // ├── fibonacci(4) = 3
 // └── fibonacci(5) = 3 + 2 = 5
 // └── fibonacci(6) = 5 + 3 = 8
-
-*
-*
-*
 * */
 
 
