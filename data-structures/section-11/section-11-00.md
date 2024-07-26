@@ -24,3 +24,9 @@ Undirected Graph
 Graph Data
 
 ![img_2.png](img_2.png)
+
+Pros and Cons
+
+Pro: Really useful with relationship, some data needs to be in graph form.
+
+Cons: Because they can get complicated scaling can get hard.
