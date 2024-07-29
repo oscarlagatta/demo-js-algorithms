@@ -16,7 +16,7 @@ const letters = ['a', 'b', 'z', 'e', 'r', 'b']
 
 const basket = [2,65,34,2,1,7,8];
 
-basket.sort(); // [1,2,2,34,65,7,8] Sort converts to string
+basket.sort(); // [1,2,2,34,65,7,8] Sort converts to strings
 
 console.log('2'.charCodeAt(0));
 console.log('65'.charCodeAt(0)); // produces a unicode value which is used to order the elements.
@@ -43,6 +43,9 @@ basket.sort(function(a,b) {
 
 
 
+If you'd like to learn about heap sort here's the link https://brilliant.org/wiki/heap-sort/
+
+Quick Sort vs Heap Sort https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort
 
 
 
