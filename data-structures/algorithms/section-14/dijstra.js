@@ -56,5 +56,5 @@ function dijkstra(graph, start) {
     return distances;
 }
 
-// Example: Find shortest distances from node A to all other nodes in the graph
+// Example: Find the shortest distances from node A to all other nodes in the graph
 console.log(dijkstra(graph, "A")); // Outputs: { A: 0, B: 1, C: 3, D: 4 }
