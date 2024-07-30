@@ -1,14 +1,14 @@
 // SHORTEST PATH
 
 // Define a graph using an adjacency list
-const graph = {
-    A: {B: 1, C: 4},       // Node A is connected to Node B with a weight of 1 and Node C with a weight of 4
-    B: {A: 1, C: 2, D: 5}, // ... and so on for other nodes
-    C: {A: 4, B: 2, D: 1},
-    D: {B: 5, C: 1}
-};
+// const graph = {
+//     A: {B: 1, C: 4},       // Node A is connected to Node B with a weight of 1 and Node C with a weight of 4
+//     B: {A: 1, C: 2, D: 5}, // ... and so on for other nodes
+//     C: {A: 4, B: 2, D: 1},
+//     D: {B: 5, C: 1}
+// };
 
-function dijkstra(graph, start) {
+export default function dijkstra(graph, start) {
     // Create an object to store the shortest distance from the start node to every other node
     let distances = {};
 
@@ -59,4 +59,4 @@ function dijkstra(graph, start) {
 }
 
 // Example: Find the shortest distances from node A to all other nodes in the graph
-console.log(dijkstra(graph, "A")); // Outputs: { A: 0, B: 1, C: 3, D: 4 }
+// console.log(dijkstra(graph, "A")); // Outputs: { A: 0, B: 1, C: 3, D: 4 }

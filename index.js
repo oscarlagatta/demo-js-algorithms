@@ -1,7 +1,5 @@
 // import {findTwoSum, findTwoSum2} from "./faang/section-01/section-01-00.js";
-import insertionSort from "./data-structures/algorithms/section-13/section-13-03.js";
-import mergeSort from "./data-structures/algorithms/section-13/section-13-04.js";
-import mergesort from "./data-structures/algorithms/section-13/section-13-04.js";
+import dijkstra from "./data-structures/algorithms/section-14/dijstra.js";
 
 
 // console.log(isValidPalindrome('Eva, can I see bees in a cave'));
@@ -27,12 +25,21 @@ import mergesort from "./data-structures/algorithms/section-13/section-13-04.js"
 // myGraph.addEdge('6', '5');
 //
 // myGraph.showConnections();
-const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+// const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 // bubbleSort(numbers);
 // console.log(numbers);
 
 // insertionSort(numbers);
 // console.log(numbers);
+//
+// const answer = mergeSort(numbers);
+// console.log(answer);
 
-const answer = mergeSort(numbers);
-console.log(answer);
+const graph = {
+    A: {B: 1, C: 4},       // Node A is connected to Node B with a weight of 1 and Node C with a weight of 4
+    B: {A: 1, C: 2, D: 5}, // ... and so on for other nodes
+    C: {A: 4, B: 2, D: 1},
+    D: {B: 5, C: 1}
+};
+
+console.log(dijkstra(graph, "A"))
