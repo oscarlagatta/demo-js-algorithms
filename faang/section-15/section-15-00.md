@@ -53,7 +53,6 @@ function tailFactorial(x, totalSoFar = 1) {
         return tailFactorial(x - 1, totalSoFar * x);
     }
 }
-
 ```
 
 1. Parameters:
@@ -109,3 +108,4 @@ In a tail-recursive function with TCO:
 In environments without TCO:
 
     - The stack still grows, but the structure of tail recursion makes it easier to convert to an iterative form, reducing the potential for stack overflow.
+
