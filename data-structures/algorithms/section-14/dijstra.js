@@ -1,3 +1,5 @@
+// SHORTEST PATH
+
 // Define a graph using an adjacency list
 const graph = {
     A: {B: 1, C: 4},       // Node A is connected to Node B with a weight of 1 and Node C with a weight of 4
